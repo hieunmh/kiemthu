@@ -2,12 +2,12 @@ import { Example } from "./example";
 
 test('age < 0 && ticket = one', () => {
   const person = new Example(-1, 'one');
-  expect(person.calculateMoney(person)).toBe('-1');
+  expect(person.calculateMoney(person)).toBe('invalid age');
 })
 
 test('age < 0 && ticket = interline', () => {
   const person = new Example(-1, 'interline');
-  expect(person.calculateMoney(person)).toBe('-1');
+  expect(person.calculateMoney(person)).toBe('invalid age');
 })
 
 test('0 <= age <=23 && ticket = one', () => {

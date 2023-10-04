@@ -24,30 +24,30 @@ export class Example {
   }
 
   calculateMoney = (person: Example) => {
-    let cost: string = '0';
+    let res: string = '0';
 
     if (person.age < 0) {
-      cost = '-1';
+      res = 'invalid age';
     }
     else {
       if (person.age >= 0 && person.age <= 23) {
         if (person.ticket === 'one') {
-          cost = '55.000 VND';
+          res = '55.000 VND';
         }
         else if (person.ticket === 'interline') {
-          cost = '100.000 VND';
+          res = '100.000 VND';
         }
       }
       else if (person.age > 23) {
         if (person.ticket === 'one') {
-          cost = '110.000 VND';
+          res = '110.000 VND';
         }
         else if (person.ticket === 'interline') {
-          cost = '200.000 VND';
+          res = '200.000 VND';
         }
       }
     }
 
-    return cost;
+    return res;
   }
 }
