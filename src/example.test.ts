@@ -12,7 +12,7 @@ test('age < 0 && ticket = interline', () => {
 
 test('0 <= age <=23 && ticket = one', () => {
   const person = new Example(18, 'one');
-  expect(person.calculateMoney(person)).toMatch('55.000 VND');
+  expect(person.calculateMoney(person)).toBe('55.000 VND');
 })
 
 

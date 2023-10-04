@@ -7,23 +7,23 @@ export class Example {
     this.ticket = ticket;
   }
 
-  setAge(age: number) {
+  setAge(age: number): void {
     this.age = age;
   }
 
-  setTicket(ticket: string) {
+  setTicket(ticket: string): void {
     this.ticket = ticket;
   }
 
-  getAge = () => {
+  getAge = (): number => {
     return this.age;
   }
 
-  getTicket = () => {
+  getTicket = (): string => {
     return this.ticket;
   }
 
-  calculateMoney = (person: Example) => {
+  calculateMoney = (person: Example) : string => {
     let res: string = '0';
 
     if (person.age < 0) {
